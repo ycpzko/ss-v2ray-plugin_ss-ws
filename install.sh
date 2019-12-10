@@ -197,7 +197,7 @@ basic_optimization(){
 
     read -p "请输入Quantumult x加密方式method（default:chacha20-ietf）:" SSx_method
     if [[ -z ${SSx_method} ]]; then
-     SSx_method="chacha20-ietf"
+     SSx_method="aes-256-gcm"
     fi
     echo ${SSx_method}
 
@@ -215,7 +215,7 @@ basic_optimization(){
 
     read -p "请输入v2ray plugin加密方式method（default:chacha20-ietf）:" SSs_method
     if [[ -z ${SSs_method} ]]; then 
-     SSs_method="chacha20-ietf"
+     SSs_method="aes-256-gcm"
     fi
     echo ${SSs_method}
 
